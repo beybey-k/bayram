@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>İyi Bayramlar</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      font-family: Georgia, serif;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    img {
+      width: 650px;
+      max-width: 90vw;
+      opacity: 0;
+      animation: imageCome 2s ease forwards;
+    }
+
+    .text {
+      margin-top: 20px;
+      color: #ffd700;
+      font-size: 65px;
+      font-weight: bold;
+      font-style: italic;
+      text-shadow:
+        4px 4px 0 #5c2e00,
+        8px 8px 15px #000,
+        0 0 25px #ffb700;
+      transform: scale(0);
+      opacity: 0;
+      animation: textCome 1.8s ease forwards;
+      animation-delay: 2s;
+    }
+
+    .subtext {
+      font-size: 48px;
+      margin-top: 10px;
+    }
+
+    @keyframes imageCome {
+      from {
+        opacity: 0;
+        transform: scale(0.4);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes textCome {
+      from {
+        opacity: 0;
+        transform: scale(0);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <img src="ben.png" alt="Dana ve Kuzu">
+
+    <div class="text">
+      İYİ BAYRAMLAR!
+      <div class="subtext">KIRLANGIÇ TURİZM</div>
+    </div>
+  </div>
+
+</body>
+</html>
